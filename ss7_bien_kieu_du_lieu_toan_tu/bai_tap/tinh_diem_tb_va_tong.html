@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Điểm Vật lý:</td>
+        <td><input type="number" id="ly"></td>
+    </tr>
+    <tr>
+        <td>Điểm Hóa học:</td>
+        <td><input type="number" id="hoa"></td>
+    </tr>
+    <tr>
+        <td>Điểm Sinh học:</td>
+        <td><input type="number" id="sinh"></td>
+    </tr>
+    <tr>
+        <td><button onclick="add()">Kết quả</button></td>
+    </tr>
+    <tr>
+        <th>Tổng:</th>
+        <td id="tong"></td>
+    </tr>
+    <tr>
+        <th>Điểm Trung bình:</th>
+        <td id="tb"></td>
+    </tr>
+</table>
+<script>
+    function add() {
+        let physics  = document.getElementById("ly").value;
+        let chemystry = document.getElementById("hoa").value;
+        let biology = document.getElementById("sinh").value;
+        let total = parseFloat(physics)+parseFloat(chemystry)+parseFloat(biology);
+        document.getElementById("tong").innerText = total;
+        let average = total/3;
+        document.getElementById("tb").innerText = average;
+    }
+</script>
+</body>
+</html>
