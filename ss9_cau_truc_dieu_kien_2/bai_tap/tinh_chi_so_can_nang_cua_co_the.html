@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+</body>
+      <script>
+          let weight = prompt("Nhập cân nặng của bạn <kg> :");
+          let height = prompt("Nhập chiều cao của bạn (m) :");
+          let bodyMassIndex = +(weight)/+(height)*+(height);
+          alert =("Chỉ số cân nặng của bạn là: " + bodyMassIndex);
+          if(bodyMassIndex < 18){
+              document.write("Underweight");
+          }else if(bodyMassIndex < 25){
+              document.write("Normal");
+          }else if(bodyMassIndex < 30){
+              document.write("Overweight");
+          }else
+              document.write("Obese");
+      </script>
+</html>

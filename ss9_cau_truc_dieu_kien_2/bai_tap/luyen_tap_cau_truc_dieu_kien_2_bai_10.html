@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    let tienDien = +(prompt("Nhập chỉ số điện (kWh):"));
+        if (tienDien > 200) {
+            alert("Tiền điện: " + ((tienDien - 200 ) * 2500 + 50 * 2000 + 50 * 1200 + 100 * 1000) + " (VND)")
+        } else if (tienDien > 150) {
+                alert("Tiền điện: " + ((tienDien - 150 ) * 2000 + 50 * 1200 + 100 * 1000) + " (VND)")
+            } else if (tienDien > 100) {
+            alert("Tiền điện: " + ((tienDien - 100 ) * 1200 + 100 * 1000) + " (VND)")
+        } else {
+                    alert("Tiền điện: " + (tienDien * 1000) + " (VND)")
+                }
+</script>
+</body>
+</html>

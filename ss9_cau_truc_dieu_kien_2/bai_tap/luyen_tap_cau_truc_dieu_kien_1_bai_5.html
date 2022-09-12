@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+  let baiKiemTraMieng = +(prompt("Nhập điểm kiểm tra miệng:"));
+  let baiKiemTra15 = +(prompt("Nhập điểm kiểm tra 15 phút:"));
+  let thiGiuaKi = +(prompt("Nhập điểm thi giữa kì:"));
+  let thiCuoiKi = +(prompt("Nhập điểm thi cuối kì:"));
+  let diemTongKet = (baiKiemTraMieng + baiKiemTra15 + thiGiuaKi*2 + thiCuoiKi*3)/7;
+  alert("Điểm tổng kết là" +diemTongKet)
+  if(diemTongKet < 5){
+    alert("Xếp loại Yếu")
+  }else if(diemTongKet < 6.5){
+    alert("Xếp loại Trung bình")
+  }else if(diemTongKet < 8){
+    alert("Xếp loại Khá")
+  }else
+    alert("Xếp lại Giỏi")
+</script>
+</body>
+</html>

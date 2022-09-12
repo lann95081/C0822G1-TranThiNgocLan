@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    const phicodinh = 25000;
+    let  minutes = +(prompt("Nhập số phút đã sử dụng:"));
+    if(minutes>200){
+        alert("Cước điện thoại là:" + (minutes - 200) * 200 + 150 * 400 + 600 * 50 + 25000)
+    }else if(minutes>50){
+        alert("Cước điện thoại là:" + ( minutes - 50) * 400 + 600 * 50 + 25000)
+    }else{
+        alert("Cước điện thoại là:" + (minutes *600 +25000))
+    }
+</script>
+</body>
+</html>
