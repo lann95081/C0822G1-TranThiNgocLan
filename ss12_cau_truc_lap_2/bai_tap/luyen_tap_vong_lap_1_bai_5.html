@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 0;
+    let number2 = 1;
+    let number3;
+    let total=1;
+    for (let i = 1; i <= 18; i++) {
+        number3 = number1+number2;
+        total +=  number3;
+        number1 = number2;
+        number2 = number3;
+    }
+    document.write("Tong cua 20 so fibonacci dau tien la:" + total);
+</script>
+</body>
+</html>

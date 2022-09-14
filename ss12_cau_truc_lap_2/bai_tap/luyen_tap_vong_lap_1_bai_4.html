@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number1 = 0;
+    let number2 = 1;
+    let number3;
+    for (let i = 1; i <= 18; i++) {
+        number3 = number1+number2;
+        if (number3%5 ===0){
+            document.write("So dau tien chia het cho 5 la:" + number3);
+            break;
+        }
+        number1 = number2;
+        number2 = number3;
+    }
+</script>
+</body>
+</html>
