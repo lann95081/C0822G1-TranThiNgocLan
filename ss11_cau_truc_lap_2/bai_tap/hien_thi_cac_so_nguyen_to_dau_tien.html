@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên: "));
+    let demSoNguyenTo = 0;
+    let index = 2;
+    while (demSoNguyenTo<number) {
+        let demSoNguyenTo = 0;
+        for (let i=1; i<=index; i++) {
+            if (index%i===0) {
+                demSoNguyenTo++;
+            }
+        }
+        if (demSoNguyenTo===2) {
+            document.write(index + "<br>");
+            demSoNguyenTo++;
+        }
+        index++;
+    }
+</script>
+</html>
