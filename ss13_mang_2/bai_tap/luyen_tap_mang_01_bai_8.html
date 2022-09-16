@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  let array = [];
+  for (let i=0; i<10; i++) {
+    array[i] = +(prompt("Nhập số nguyên N" + i));
+  }
+  alert("array = [" + array + "]");
+  for (let i=0; i<10; i++) {
+    for (let j=0; j<=i; j++) {
+      if (array[i]>array[j]) {
+        let change = array[i];
+        array[i] = array[j];
+        array[j] = change;
+      }
+    }
+  }
+  document.write( array + "-đã được sắp xếp.");
+</script>
+</html>

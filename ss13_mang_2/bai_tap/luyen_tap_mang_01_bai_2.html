@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  let array = [+(prompt("Nhập số nguyên N1"))];
+  let maxNumber = array[0];
+  let index = 0;
+  for (let i=1; i<10; i++) {
+    array[i] = +(prompt("Nhập số nguyên N" + i));
+    if (array[i]>maxNumber) {
+      maxNumber = array[i];
+      index = i;
+    }
+  }
+  alert("array = [" + array + "]");
+  document.write("Giá trị lớn nhất trong mảng là " + maxNumber + " ; Vị trí thứ: [" + index + "]");
+</script>
+</html>

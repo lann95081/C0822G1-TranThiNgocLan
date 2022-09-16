@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  let arrayA = [];
+  let arrayB = [];
+  let arrayC = [];
+  for (let i=0; i<10; i++) {
+    arrayA[i] = +(prompt("Nhập phần tử " + i + " của mảng A: "));
+    arrayB[i] = +(prompt("Nhập phần tử " + i + " của mảng B: "));
+  }
+  alert("arrayA = [" + arrayA + "] và arrayB = [" + arrayB + "]");
+  for (let i=0; i<10; i++) {
+    arrayC[i] = arrayA[i];
+    arrayC[10+i] = arrayB[i];
+  }
+  document.write("arrayC = [" + arrayC + "]");
+</script>
+</html>

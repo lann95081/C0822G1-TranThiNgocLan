@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    let array = [];
+    let count = 0;
+    for (let i=0; i<10; i++) {
+        array[i] = +(prompt("Nhập số nguyên N" + i));
+        if (array[i]>=10) {
+            count++;
+        }
+    }
+    alert("array = [" + array + "]");
+    document.write("Có " + count + " số nguyên dương >= 10.");
+</script>
+</html>

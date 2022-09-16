@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    let number =+(prompt("Nhập số phần tử của mảng "));
+    let array = [];
+    for (let i=0; i<number; i++) {
+        array[i] = +(prompt("Nhập số nguyên N" + i));
+    }
+    alert("array = [" + array + "]");
+    let first = 0;
+    let last = array.length - 1;
+    while (first < last) {
+        let change = array[first];
+        array[first] = array[last];
+        array[last] = change;
+        first++;
+        last--;
+    }
+    document.write("Mảng sau khi đảo ngược các phần tử: array = [" + array + "]");
+</script>
+</html>

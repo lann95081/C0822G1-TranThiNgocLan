@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    let chuoiNhap = prompt("Nhập vào 1 chuỗi:");
+    let chuoiHoa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let chuoiThuong = "abcdefghijklmnopqrstuvwxyz";
+    let str = chuoiNhap.toString();
+    let array = [];
+    for (i = 0; i < str.length; i++) {
+        if (chuoiHoa.indexOf(str[i]) !== -1) {
+            array.push(str[i].toLowerCase());
+        } else if (chuoiThuong.indexOf(str[i]) !== -1) {
+            array.push(str[i].toUpperCase());
+        } else {
+            array.push(str[i]);
+        }
+    }
+    document.write(array.join(''));
+</script>
+</html>

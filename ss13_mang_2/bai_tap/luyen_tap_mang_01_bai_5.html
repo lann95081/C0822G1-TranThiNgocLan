@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  let number = +(prompt("Nhập số phần tử của mảng "));
+  let array = [];
+  let count = 0;
+  for (let i=0; i<number; i++) {
+    array[i] = +(prompt("Nhập số nguyên N" + i));
+    if (array[i]<0) {
+      count++;
+    }
+  }
+  alert("array = [" + array + "]");
+  document.write("Có " + count + " số nguyên âm trong chuỗi ");
+</script>
+</html>

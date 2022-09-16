@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+  let array = [];
+  for (let i=0; i<10; i++) {
+    array[i] = +(prompt("Nhập số nguyên N" + i));
+  }
+  alert("array = [" + array + "]");
+  let numberV = +(prompt("Input V: "));
+  let count = 0;
+  for (let i=0; i<=9; i++) {
+    if (numberV === array[i]) {
+      alert(numberV + " is in the array");
+      count++;
+    }
+  }
+  if (count===0) {
+    alert(numberV + " is not in the array");
+  }
+</script>
+</html>

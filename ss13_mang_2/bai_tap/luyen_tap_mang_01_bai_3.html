@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let number = +(prompt("Nhập số phần tử của mảng "));
+  let array = [];
+  let sum = 0;
+  for (let i=0; i<number; i++) {
+    array[i] = +(prompt("Nhập số nguyên N" + i));
+    sum += array[i];
+  }
+  let max = array[0];
+  for (let i=0; i<number; i++) {
+    if (array[i]>max) {
+      max = array[i];
+    }
+  }
+  alert("array = [" + array + "]");
+  document.write("GTLN của các phần tử trong mảng là " + max + "<br>" +
+          "Giá trị trung bình của các phần tử trong mảng là " + sum/number);
+</script>
+</html>
