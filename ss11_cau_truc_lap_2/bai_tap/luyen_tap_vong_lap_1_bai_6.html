@@ -6,18 +6,20 @@
 </head>
 <body>
 <script>
-let count = 0;
-let total = 0;
-let i = 7;
-while (count<30){
-    if (i%7===0){
-        total += i;
-        count++;
-    } else {
-        break;
+
+    let dem = 0;
+    let tong = 0;
+    let i = 0;
+    while (dem <= 30) {
+        if (i % 7 === 0) {
+            document.write(i + "<br>");
+            tong = tong + i;
+            dem++;
+        }
+        i++;
+
     }
-}
-document.write("Tổng của 30 số tự nhiên đầu tiên chia hết cho 7 là: " + total);
+    document.write("ket qua: " + tong);
 </script>
 </body>
 </html>
