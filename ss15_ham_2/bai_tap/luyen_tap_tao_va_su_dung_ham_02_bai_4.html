@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function kiemTraSo(nhapVao) {
+        if (+nhapVao % +nhapVao === 0 || +nhapVao === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let nhapVao = +prompt("Nhap vao ki tu bat ki: ");
+    document.write(kiemTraSo(nhapVao));
+</script>
+</body>
+</html>

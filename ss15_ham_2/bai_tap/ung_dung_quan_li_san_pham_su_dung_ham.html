@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3><strong>Add New Product</strong></h3>
+<input type="text" id="productId" placeholder="New Product">
+<button onclick="add()" style="background: chartreuse"> Add</button>
+<h3><strong>Display All Product</strong></h3>
+<span> Amount Product </span><span id="amount"></span>
+<p id="result"></p>
+<script>
+    let arr = ["Nokia", "Samsum", "Apple", "Xiaomi", "LG", "Vivo", "Oppo", "Huawei", "Motorola", "Realme", "TECNO"];
+    display();
+
+    function add() {
+        let product = document.getElementById("productId").value;
+        if (product != "") {
+            arr.push(product);
+        } else {
+            alert("Vui long nhap ten san pham");
+        }
+        document.getElementById("productId").value = "";
+        display();
+    }
+
+    function display() {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Name</th>\n' +
+            '        <th>Edit</th>\n' +
+            '        <th>Delete</th>\n' +
+            '    </tr>'
+        for (let i = 0; i < arr.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + arr[i] + '</td>\n' +
+                '        <td><input type="button" style="background: chartreuse" onclick="editProduct(' + i + ')"value="edit"></td>\n' +
+                '        <td><input type="button" style="background: chartreuse" onclick="deleteProduct(' + i + ')"value="delete"></td>\n' +
+                '    </tr>'
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+        document.getElementById("amount").innerHTML = arr.length;
+    }
+
+    function deleteProduct(index) {
+        let deleteConf = confirm(" Ban co muon xoa san pham: " + arr[index]);
+        if (deleteConf) {
+            arr.splice(index, 1);
+        }
+        display()
+    }
+
+    function editProduct(index) {
+        let newProduct = prompt(" Nhap lai ten san pham", arr[index]);
+        arr[index] = newProduct;
+        display();
+    }
+</script>
+</body>
+</html>

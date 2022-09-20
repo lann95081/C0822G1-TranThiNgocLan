@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function swap(arr) {
+        let change = arr[0];
+        arr[0] = arr[1];
+        arr[1] = change;
+        return arr;
+    }
+
+    let num1 = +prompt("Nhap vao so nguyen thu nhat: ");
+    let num2 = +prompt("Nhap vao so nguyen thu hai: ");
+    let arr = [num1, num2];
+    alert(" Truoc khi doi cho la: " + arr);
+    alert(" Sau khi doi cho la:  " + swap(arr));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr = ["n", "g", "c", "l", "n", "h", "n", "p", "g", "h", "t"];
+
+    function checkNum(nhapSo) {
+        let dem = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (nhapSo === arr[i]) {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            return -1;
+        } else {
+            return dem;
+        }
+    }
+
+    alert(arr);
+    let nhapSo = prompt("Nhap vao ki tu can kiem tra: ");
+    document.write("So lan xuat hien cua ki tu la: "  + checkNum(nhapSo));
+
+</script>
+</body>
+</html>

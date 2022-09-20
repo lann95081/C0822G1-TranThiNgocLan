@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function lookStar(star) {
+        let index = 0;
+        for (let i=0; i<star1.length; i++) {
+            if (star === star1[i]) {
+                document.write(star1[i] + " thuộc chòm sao " + star2[i]);
+                index++;
+            }
+        }
+        if (index===0) {
+            document.write("Không tìm thấy kết quả");
+        }
+    }
+    lookStar(prompt("Nhập tên ngôi sao: "));
+</script>
+</body>
+</html>

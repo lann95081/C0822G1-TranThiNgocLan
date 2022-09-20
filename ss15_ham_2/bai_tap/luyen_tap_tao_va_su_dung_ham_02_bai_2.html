@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function area(radius) {
+        let result = Math.PI * radius * radius;
+        return result;
+    }
+
+    function perimeter(radius) {
+        let result = 2 * Math.PI * radius;
+        return result;
+    }
+
+    let radius = +prompt(" Nhap ban kinh: ");
+    document.write(" Dien tich hinh tron la: " + area(radius) + "(cm2)" + "<br>");
+    document.write(" Chu vi hinh tron la: " + perimeter(radius) + "(cm)");
+
+</script>
+</body>
+</html>
