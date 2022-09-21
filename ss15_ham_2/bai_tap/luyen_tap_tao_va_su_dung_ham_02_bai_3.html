@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    function tinhGiaiThua(thamso) {
+    function tinhGiaiThua(thamSo) {
         let ketQua = 1;
-        for (let i = 1; i <= thamso; i++) {
+        for (let i = 1; i <= thamSo; i++) {
             ketQua *= i;
         }
         return ketQua;
     }
 
-    let thamso = +prompt(" Nhap vao 1 so nguyen bat ki: ");
-    document.write(thamso + "!=" + tinhGiaiThua(thamso));
+    let thamSo = +prompt(" Nhap vao 1 so nguyen bat ki: ");
+    document.write(thamSo + "!=" + tinhGiaiThua(thamSo));
 </script>
 </body>
 </html>
