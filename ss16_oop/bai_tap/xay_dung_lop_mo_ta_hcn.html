@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="myCanvas" width="300px" height="200px"></canvas>
+<p id="result"></p>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setLength(newLength) {
+            this.length = newLength;
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        getArea() {
+            return this.length * this.width;
+        }
+
+        getPerimeter() {
+            return (this.length + this.width) * 2;
+        }
+    }
+
+    let rectangle = new Rectangle(100, 50);
+    rectangle.setLength(200);
+    rectangle.setWidth(100);
+
+    function createRectangle() {
+        let ctx = document.getElementById("myCanvas").getContext("2d");
+        ctx.fillStyle = "purple";
+        ctx.fillRect(0, 0, rectangle.getLength(), rectangle.getWidth());
+    }
+
+    document.getElementById("result").innerHTML = "Chiều dài: " + rectangle.getLength() + "<br>"
+        + "Chiều rộng " + rectangle.getWidth() + "<br>"
+        + "Diện tích: " + rectangle.getArea() + "<br>"
+        + "Chu vi: " + rectangle.getPerimeter();
+    createRectangle();
+</script>
+</body>
+</html>
