@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr1 = [5, 6, 7];
+    let arr2 = [6, 3, 8];
+    let max = arr1[0] / arr2[0];
+    let numerator = arr1[0];
+    let denominator = arr2[0];
+    let index = 0;
+    for (let i = 1; i < arr1.length; i++) {
+        if (arr1[i] / arr2[i] > max) {
+            max = arr1[i] / arr2[i];
+            numerator = arr1[i];
+            denominator = arr2[i];
+            index = i;
+        }
+    }
+    document.write(numerator + "/" + denominator + " la phan so lon nhat, " + " co chi so la " + index);
+</script>
+</body>
+</html>
