@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let nhapLuong = +prompt("Nhap luong cua nhan vien: ");
+    let thue;
+    let luongRong;
+    if (nhapLuong < 7000000) {
+        thue = nhapLuong * 5 / 100;
+    } else if (nhapLuong < 15000000) {
+        thue = nhapLuong * 10 / 100;
+    } else {
+        thue = nhapLuong * 20 / 100;
+    }
+    luongRong = nhapLuong - thue;
+    document.write("Tien luong la:" + nhapLuong + "(VND)" + "<br>");
+    document.write("Thue thu nhap la: " + thue + "(VND)" + "<br>");
+    document.write("Luong rong la:" + luongRong + "(VND)" + "<br>");
+</script>
+</body>
+</html>
