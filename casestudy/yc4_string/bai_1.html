@@ -6,13 +6,18 @@
 </head>
 <body>
 <script>
-    let str = prompt("Nhap vao 1 chuoi:");
-    document.write("Truoc khi chuan hoa: " + str+"<br>");
-    let arr = str.toLowerCase().split(" ");
 
-    document.write("Truoc khi chuan hoa: ");
+    //    Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau
+    //    và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI => Truong Tan Hai.
+    //        Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím,
+    //        in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
+
+    let str = prompt("Nhap vao 1 chuoi:");
+    document.write("Truoc khi chuan hoa: " + str + "<br>");
+    let arr = str.toLowerCase().split(" ");
+    document.write("Sau khi chuan hoa: ");
+
     for (let i = 0; i < arr.length; i++) {
-        arr[i].trim();
 
         document.write(arr[i].charAt(0).toUpperCase());
         for (let j = 1; j < arr[i].length; j++) {
@@ -21,26 +26,29 @@
         document.write(" ");
     }
 
-    let max = arr[0].length;
+
+    let max = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i].length > max) {
-            max = arr[i].length;
+            max = arr[i];
         }
     }
+    document.write("<br>"+"Tu dai nhat la: " + max);
 
-    let word = max.charAt(0).toUpperCase();
-    for (let i=1; i<max.length; i++) {
-        word += max.charAt(i);
-    }
 
-    document.write("<br>" + "Tu dai nhat la: " + "<br>");
-    for (let i = 0; i <arr.length ; i++) {
-        if (arr[i].length === max) {
-            document.write(arr[i] + "<br>");
-        }
-
-    }
-    document.write("<br>"+"Tu dai nhat la: " + word);
+    // let word = max.charAt(0).toUpperCase();
+    // for (let i = 1; i < max.length; i++) {
+    //     word += max.charAt(i);
+    // }
+    //
+    // document.write("<br>" + "Tu dai nhat la: " + "<br>");
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i].length === max) {
+    //         document.write(arr[i] + "<br>");
+    //     }
+    //
+    // }
+    // document.write("<br>" + "Tu dai nhat la: " + word);
 
 </script>
 </body>
