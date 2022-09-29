@@ -6,6 +6,10 @@
 </head>
 <body>
 <script>
+    // Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+    //     Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
+    // 2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+
     function soLuongKiTuChung(string1, string2) {
         let array1 = string1.split("");
         let array2 = string2.split("");
@@ -22,11 +26,12 @@
         }
         return dem;
     }
+
     let string1 = prompt("Nhap chuoi thu nhat: ");
     let string2 = prompt("Nhap chuoi thu hai: ");
     document.write("Chuoi thu nhat la: " + string1 + "<br>");
     document.write("Chuoi thu hai la: " + string2 + "<br>");
-    document.write("So ki tu chung la: " + soLuongKiTuChung(string1, string2) + "<br>");
+    document.write("So ki tu chung la: " + soLuongKiTuChung(string1,string2) + "<br>");
 
 </script>
 </body>
